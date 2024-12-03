@@ -184,3 +184,34 @@ accounts.forEach((acc) => {
   acc.credit(1000);
   console.log(acc.describe());
 });
+
+Or like this:
+
+class BankAccount {
+  constructor(name, balance) {
+    this.name = name;
+    this.balance = 0;
+  }
+  credit(amount) {
+    this.balance += amount;
+  }
+  describe() {
+    return `Owner: ${this.name}, balance: ${this.balance}`;
+  }
+}
+
+function createAccount(name) {
+  return new BankAccount(name);
+}
+let sean = createAccount("Sean");
+let brad = createAccount("Brad");
+let georges = createAccount("Georges");
+console.log(sean.describe());
+console.log(brad.describe());
+console.log(georges.describe());
+
+const accounts = [sean, brad, georges];
+accounts.forEach((acc) => {
+  acc.credit(3000);
+  console.log(acc.describe());
+});
