@@ -1,0 +1,35 @@
+// // // let arrayOfNums = [1, -4, 7, 12];
+// // function positiveSum(arr) {
+// //   return arr.filter((n) => n > 0).reduce((acc, num) => (acc += num), 0);
+// // }
+
+// // let result = positiveSum([1, -4, 7, 12]);
+// // console.log(result);
+
+// // function squareSum(numbers) {
+// //   return numbers.reduce((acc, c) => (acc += c ** 2), 0);
+// // }
+// // let result2 = squareSum([15, 6, 15, -18, -2, -13]);
+// // console.log(result2);
+
+// // function makeNegative(num) {
+// //   // return num < 0 ? num : num > 0 ? -num : 0;
+// //   return Math.abs(num) * -1;
+// // }
+// // let result3 = makeNegative(0);
+// // console.log(result3);
+
+function correct(string) {
+  let splitString = string.split("");
+  console.log(splitString);
+  let correctedString = splitString.map((letter) => {
+    if (letter === "5") return "S";
+    else if (letter === "0") return "O";
+    else if (letter === "1") return "I";
+    else return letter;
+  });
+  return correctedString.join("").toUpperCase();
+}
+
+let result4 = correct("h0w are y0u?");
+console.log(result4);
