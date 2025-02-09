@@ -1,0 +1,25 @@
+h1 {
+  color: crimson;
+}
+
+span {
+  color: rgb(12, 150, 236);
+  text-transform: uppercase;
+}
+
+form input {
+  width: 15rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 3px solid rgb(119, 31, 148);
+}
+
+button {
+  /* width: 15rem; */
+  height: 1.9rem;
+  background-color: lightgoldenrodyellow;
+  color: rgb(119, 31, 148);
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
